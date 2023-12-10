@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_SyedAzhar234_python_harness_1702249831539-push-trigger-input-set
+  identifier: Build_SyedAzhar234_python_harness_1702249831539pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: pythontest
+  pipeline:
+    identifier: Build_SyedAzhar234_python_harness_1702249831539
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
