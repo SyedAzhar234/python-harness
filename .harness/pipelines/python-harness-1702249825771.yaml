@@ -27,11 +27,11 @@ pipeline:
                       echo "Welcome to Harness CI"
                       python -m pip install --upgrade pip
                       pip install  pytest
-                      if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+                      if [ -f requirements.txt ]; then pip install -r requirements.txt --ignore-installed; fi
           platform:
-            arch: Amd64
             os: Linux
+            arch: Amd64
           runtime:
-            spec: {}
             type: Cloud
+            spec: {}
         type: CI
